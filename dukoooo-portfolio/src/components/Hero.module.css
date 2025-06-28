@@ -1,3 +1,45 @@
 .hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 80vh;
+  margin: 7em auto;
+}
+
+h2 {
+  font-size: clamp(30px, 6vw, 50px);
+  color: var(--color-text-darker);
+}
+h3 {
+  color: var(--color-neon);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  font-family: "SF Mono", "Fira Code", monospace;
+}
+.heading {
+  font-size: clamp(30px, 6vw, 50px);
+  letter-spacing: 2px;
+}
+p {
+  margin-top: 2vh;
+  max-width: 666px;
+  letter-spacing: 0.8px;
+  color: var(--color-text-darker);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+}
+
+@media screen and (max-width: 666px) {
+  .hero {
+    margin: 3em auto;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .hero {
+    margin: 1em auto;
+  }
 }

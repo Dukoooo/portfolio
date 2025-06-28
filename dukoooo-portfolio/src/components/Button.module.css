@@ -1,0 +1,45 @@
+.btn {
+  position: relative;
+  color: var(--color-neon);
+  font-size: clamp(1.3em, 3vw, 1.35rem);
+  font-family: "SF Mono", "Fira Code", monospace;
+  background-color: var(--color-bg-lighter);
+  border: 1px solid var(--color-neon);
+  border-radius: 4px;
+  width: 19rem;
+  line-height: 2.7rem;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+.btn::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 19rem;
+  height: 48px;
+  z-index: 1;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  border: 1px solid var(--color-neon);
+}
+.btn:active,
+.btn:hover {
+  animation: move 2s ease;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: scale(1);
+    border: none;
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: var(--color-bg);
+    color: (var(--color-text) --color-text-darkest);
+    box-shadow: 2px 2px 4px 4px var(--color-neon);
+  }
+}

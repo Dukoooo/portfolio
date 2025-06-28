@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   font-size: clamp(1rem, 2vw, 1.125rem);
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -28,9 +29,11 @@ img {
 
 :root {
   --color-bg: #132045;
+  --color-bg-lighter: #162d6fb0;
   --color-text: #ebedef;
+  --color-text-darker: #b9bcbf;
+  --color-text-darkest: #a8a5a5f2;
   --color-neon: #00e3cc;
-  --color-text-darker: #a8a5a5f2;
   --max-width: clamp(320px, 90%, 1200px);
 }
 
