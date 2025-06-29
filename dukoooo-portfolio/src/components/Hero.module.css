@@ -28,18 +28,33 @@ p {
   font-size: clamp(1rem, 1.4vw, 1.2rem);
 }
 
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 1500px) {
   .hero {
-    margin: 3em auto;
+    margin: 4em auto;
   }
-
-  p {
-    margin-top: 0;
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    margin-top: 10%;
   }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 666px) {
   .hero {
-    margin: 1em auto;
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero {
+    margin: 3rem auto;
+  }
+  .heading {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    line-height: 20px;
   }
 }
