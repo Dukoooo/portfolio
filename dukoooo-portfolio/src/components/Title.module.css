@@ -1,0 +1,58 @@
+.title {
+  position: relative;
+  font-size: clamp(30px, 6vw, 50px);
+  letter-spacing: 2px;
+  margin-bottom: 4%;
+  display: inline-block;
+  text-align: center;
+}
+
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  width: 20%;
+  height: 1px;
+  background-color: var(--color-text);
+}
+
+.title::before {
+  left: 15%;
+}
+
+.title::after {
+  right: 15%;
+}
+
+@media screen and (max-width: 1024px) {
+  .title::before {
+    left: 10%;
+  }
+
+  .title::after {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .title {
+    margin-bottom: 3rem;
+  }
+  .title::before {
+    left: 5%;
+  }
+
+  .title::after {
+    right: 5%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .title::before {
+    left: 0%;
+  }
+
+  .title::after {
+    right: 0%;
+  }
+}

@@ -4,32 +4,6 @@
   flex-direction: column;
   text-align: center;
 }
-.title {
-  position: relative;
-  font-size: clamp(30px, 6vw, 50px);
-  letter-spacing: 2px;
-  margin-bottom: 4%;
-  display: inline-block;
-  text-align: center;
-}
-
-.title::before,
-.title::after {
-  content: "";
-  position: absolute;
-  top: 58%;
-  width: 20%;
-  height: 1px;
-  background-color: var(--color-text);
-}
-
-.title::before {
-  left: 15%;
-}
-
-.title::after {
-  right: 15%;
-}
 
 .content {
   display: flex;
@@ -72,11 +46,7 @@ img:active {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 666px) {
-  .title {
-    margin-bottom: 3rem;
-  }
   .img_container {
     width: 80%;
     background-color: var(--color-neon);

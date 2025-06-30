@@ -1,9 +1,10 @@
 import styles from "./AboutMe.module.css";
 import img from "../assets/ja.jpeg";
+import Title from "./Title";
 function AboutMe() {
   return (
     <section className={`container ${styles.wrapper}`} id="about">
-      <h1 className={styles.title}>About me</h1>
+      <Title level={2}>About me</Title>
       <div className={styles.content}>
         <div className={styles.img_container}>
           <img src={img} alt="Juraj picture" className={styles.img} />
