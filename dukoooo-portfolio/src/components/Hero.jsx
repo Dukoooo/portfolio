@@ -17,12 +17,10 @@ function Hero() {
         cursor={false}
       />
 
-      <h2>a passionate web developer with a strong love for React.</h2>
+      <h2>a passionate web developer who loves working with React.</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae qui
-        consequuntur quisquam veritatis nam. Possimus iste repudiandae
-        necessitatibus voluptas vel blanditiis ipsa incidunt corporis? Quod aut
-        neque earum dignissimos ipsam.
+        Welcome to my portfolio! I specialize in building clean, responsive, and
+        high-quality React applications that deliver great user experiences.
       </p>
       <Button>Check out my resume!</Button>
     </section>

@@ -1,0 +1,43 @@
+.slider_box {
+  display: flex;
+  justify-content: baseline;
+  padding: 4%;
+  border-radius: 20px;
+  margin: 10% auto 20% auto;
+  /* background: var(--color-bg-elements); */
+  box-shadow: 0px 0px 4px 0px rgb(135, 134, 134);
+}
+
+.arrow_left {
+  background: transparent;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.4s ease;
+}
+.arrow_right {
+  background: transparent;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.4s ease;
+}
+.arrow_left:hover,
+.arrow_right:hover {
+  transform: scale(1.1);
+}
+
+.tech_item {
+  font-family: --font-text-mono;
+  font-weight: 900;
+  font-size: clamp(0.8rem, 4vw, 1.3rem);
+  color: var(--color-text);
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: var(--color-neon);
+}

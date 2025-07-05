@@ -2,8 +2,6 @@ import styles from "./Navigation.module.css";
 import { Link } from "react-scroll";
 import logo from "../assets/jg.png";
 
-import { FaBars } from "react-icons/fa6";
-import { FaTimes } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
 
 function Navigation() {
@@ -37,7 +35,14 @@ function Navigation() {
           className={`${styles.list} ${openMenu ? styles.open : styles.close} `}
         >
           <li className={styles.item}>
-            <Link to="hero" spy={true} smooth={true} offset={50} duration={500}>
+            <Link
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={() => setIsOpen(false)}
+            >
               Home
             </Link>
           </li>
@@ -47,27 +52,49 @@ function Navigation() {
               to="about"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={0}
               duration={500}
+              onClick={() => setIsOpen(false)}
             >
               About me
             </Link>
           </li>
           <li className={styles.item}>
             {" "}
-            <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
+            <Link
+              to="jurney"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={500}
+              onClick={() => setIsOpen(false)}
+            >
               Jurney
             </Link>
           </li>
           <li className={styles.item}>
             {" "}
-            <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onClick={() => setIsOpen(false)}
+            >
               Projects
             </Link>
           </li>
           <li className={styles.item}>
             {" "}
-            <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onClick={() => setIsOpen(false)}
+            >
               Contact
             </Link>
           </li>

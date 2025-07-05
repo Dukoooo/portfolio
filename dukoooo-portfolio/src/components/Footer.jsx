@@ -1,9 +1,10 @@
 import styles from "./Footer.module.css";
+import Title from "./Title";
 
 function Footer() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Hello from Footer</h1>
+    <div className={` container ${styles.wrapper}`} id="contact">
+      <Title>Contact</Title>
     </div>
   );
 }

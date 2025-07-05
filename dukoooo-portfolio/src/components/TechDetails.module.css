@@ -1,10 +1,13 @@
-.tech_tedails {
+.tech_details {
   display: flex;
   flex: 1;
   margin-left: 15%;
   flex-direction: column;
   text-align: left;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
 }
+
 .heading {
   font-family: "SF Mono", "Fira Code", monospace;
 }
@@ -19,13 +22,13 @@
   color: var(--color-text-lighter);
   list-style: none;
 }
-.tech_tedails li::before {
+.tech_details li::before {
   content: "▹  ";
   color: var(--color-neon);
 }
 
 @media screen and (max-width: 768px) {
-  .tech_tedails {
+  .tech_details {
     margin-left: 5%;
   }
 }

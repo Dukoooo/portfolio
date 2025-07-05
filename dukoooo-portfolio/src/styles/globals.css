@@ -22,6 +22,9 @@ body {
   padding: 0 1.5rem;
 }
 
+@media screen and (max-width: 666px) {
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -33,19 +36,21 @@ img {
   --color-text: #ebedef;
   --color-text-darker: #b9bcbf;
   --color-text-darkest: #a8a5a5f2; */
-  --color-neon: #00e3cc;
+  --color-neon-one: #00e3cc;
 
   --max-width: clamp(320px, 90%, 1200px);
 }
 
 :root {
-  --color-neon: #39ff14;
+  --color-neon: #37ff14;
+  --color-neon-secondary: #00ff2f;
   --color-bg-lighter: #191a1d;
   --color-bg: #1a1b1e;
   --color-bg-elements: #44454c6d;
   --color-text: #eeeeee;
   --color-text-lighter: #ffffffcc;
   --color-text-darkest: #222;
+  --font-text-mono: "SF Mono", "Fira Code", monospace;
 }
 
 h1,
@@ -58,4 +63,6 @@ h3 {
 p {
   line-height: 1.6;
   margin-bottom: 1rem;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
 }
