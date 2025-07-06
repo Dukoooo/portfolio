@@ -122,16 +122,17 @@
     right: 5%;
     display: flex;
     flex-direction: column;
-    width: 70px;
+    margin-top: 2%;
+    width: 50px;
     cursor: pointer;
     z-index: 100;
   }
 
   .navcheck span {
     background-color: var(--color-neon);
-    border-radius: 10px;
-    height: 7px;
-    margin: 7px 0;
+    border-radius: 5px;
+    height: 5px;
+    margin: 5px 0;
     transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
@@ -159,7 +160,7 @@
   .navcheck input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     transform-origin: bottom;
     width: 50%;
-    transform: translate(30px, -11px) rotateZ(45deg);
+    transform: translate(23px, -7px) rotateZ(45deg);
   }
 }
 

@@ -3,6 +3,7 @@
   min-height: 100vh;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 15%;
 }
 
 .content {
@@ -10,9 +11,10 @@
   justify-content: space-between;
   flex-direction: row;
   gap: 2rem;
+  margin-top: 10%;
 }
 .img_container {
-  width: 50%;
+  max-width: 30%;
   background-color: var(--color-neon);
 }
 .img {
@@ -30,8 +32,9 @@ img:active {
 }
 
 .paragraph {
-  text-align: left;
+  text-align: center;
   color: var(--color-text);
+  font-size: clamp(0.9rem, 1.3vw, 1em);
 }
 
 @media screen and (max-width: 1200px) {
@@ -42,13 +45,18 @@ img:active {
     flex-direction: column;
     gap: 2rem;
   }
-  .img_wrapper {
-    width: 100%;
+  .img_container {
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .wrapper {
+    min-height: fit-content;
   }
 }
 @media screen and (max-width: 666px) {
   .img_container {
-    width: 80%;
+    max-width: 70%;
     background-color: var(--color-neon);
   }
   .img {

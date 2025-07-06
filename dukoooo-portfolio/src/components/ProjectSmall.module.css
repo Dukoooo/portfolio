@@ -1,0 +1,35 @@
+.project_container_small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 3rem;
+  height: fit-content;
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  background-color: #00000051;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project_container_small::before {
+}
+
+.content_small {
+}
+.name_small {
+}
+
+.project_text_small {
+}
+
+.tech_list_small {
+}
+.tech_element_small {
+}
+
+.icons_small {
+}

@@ -1,7 +1,7 @@
 import styles from "./Navigation.module.css";
 import { Link } from "react-scroll";
 import logo from "../assets/jg.png";
-
+import Headroom from "./Headroom";
 import { useState, useRef, useEffect } from "react";
 
 function Navigation() {
@@ -27,7 +27,7 @@ function Navigation() {
 
   return (
     <header className="header container">
-      <nav className={styles.navbar} ref={menuRef}>
+      <nav className={styles.navbar} ref={menuRef} id="nav">
         <Link>
           <img src={logo} alt="logo" className={styles.logo} />
         </Link>
@@ -36,10 +36,10 @@ function Navigation() {
         >
           <li className={styles.item}>
             <Link
-              to="hero"
+              to="nav"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-50}
               duration={500}
               onClick={() => setIsOpen(false)}
             >
@@ -78,7 +78,7 @@ function Navigation() {
               to="projects"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={0}
               duration={500}
               onClick={() => setIsOpen(false)}
             >
@@ -99,18 +99,21 @@ function Navigation() {
             </Link>
           </li>
         </ul>
-        <label htmlFor="check" className={styles.navcheck}>
-          <input
-            type="checkbox"
-            id="check"
-            className={styles.checkBtn}
-            checked={openMenu}
-            onChange={handleToggle}
-          />
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+
+        <Headroom>
+          <label htmlFor="check" className={styles.navcheck}>
+            <input
+              type="checkbox"
+              id="check"
+              className={styles.checkBtn}
+              checked={openMenu}
+              onChange={handleToggle}
+            />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </Headroom>
       </nav>
     </header>
   );

@@ -179,10 +179,6 @@ a {
     text-align: left;
   }
 
-  .project_text {
-    background-color: transparent;
-  }
-
   .project_container:nth-child(even) .content {
     text-align: left;
     left: 0;
@@ -210,22 +206,24 @@ a {
   }
 
   .project_text {
-    color: #d4cbcb;
+    color: #e2dede;
     padding: 4%;
     border-radius: 10px;
     position: relative;
-    font-size: clamp(0.6rem, 1.9vw, 1em);
+    font-size: clamp(0.8rem, 1.9vw, 1em);
+    background-color: transparent;
   }
 }
 
-@media screen and (max-width: 666px) {
+/* @media screen and (max-width: 666px) {
   .figure {
     position: relative;
     max-width: 100%;
     border-radius: 4px;
   }
-}
+} */
 
+/* 
 @media screen and (max-width: 470px) {
   .project_container {
     margin-bottom: 20%;
@@ -238,10 +236,27 @@ a {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 391px) {
+  .content {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
   .figure {
     position: relative;
-    height: 50vh;
+    height: 52vh;
     border-radius: 4px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .content {
+    padding: 0;
+  }
+  .figure {
+    position: relative;
+    height: 65vh;
+  }
+} */
