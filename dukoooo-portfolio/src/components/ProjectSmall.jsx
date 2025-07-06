@@ -9,8 +9,6 @@ function ProjectSmall({ project }) {
       className={styles.project_container_small}
       style={{
         backgroundImage: `url(${img})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
       }}
     >
       <aside className={styles.content_small}>
