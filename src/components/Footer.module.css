@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  min-height: 60vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer_para {
+  font-size: clamp(1rem, 1.7vw, 1.2em);
+  font-family: "Roboto", sans-serif;
+}
+.foot_text {
+  font-family: var(--font-text-mono);
+  color: var(--color-text-lighter);
+  font-size: clamp(0.6rem, 0.9vw, 1em);
+}
+
+.social_icons {
+  display: flex;
+  gap: 1.3rem;
+  margin: 5% auto 2% auto;
+  cursor: pointer;
+}
