@@ -1,6 +1,7 @@
 import ciglanProject from "../assets/ciglanProject.png";
 import todoProject from "../assets/todoApp.png";
 import myPortfolio from "../assets/myPortfolio.png";
+import weatherApp from "../assets/weatherApp.png";
 const projects = [
   {
     id: 1,
@@ -31,6 +32,17 @@ The project focuses on component structure, clean styling, and user-friendly int
 It showcases my web development projects, skills, and contact information in a clean and responsive layout.
 The site includes smooth navigation, a dynamic tech slider, and modern design focused on clarity and usability.`,
     technologies: ["React", "CSS modules"],
+  },
+  {
+    id: 4,
+    name: "Weather App",
+    img: weatherApp,
+    text: `A modern weather application built with React and CSS Modules.  
+It fetches real-time weather data from the OpenWeather API based on user location or city search.  
+Features include dynamic weather icons, temperature, humidity, wind speed, and local time display, all in a clean and responsive design.`,
+    technologies: ["React", "CSS Modules", "Fetch API", "Geolocation API"],
+    link: "https://dukoweatherapp.netlify.app/",
+    gitLink: "https://github.com/Dukoooo/react-weather-app",
   },
 ];
 
