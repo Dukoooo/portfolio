@@ -2,6 +2,7 @@ import ciglanProject from "../assets/ciglanProject.png";
 import todoProject from "../assets/todoApp.png";
 import myPortfolio from "../assets/myPortfolio.png";
 import weatherApp from "../assets/weatherApp.png";
+import budgetApp from "../assets/budgetApp.png";
 const projects = [
   {
     id: 1,
@@ -43,6 +44,17 @@ Features include dynamic weather icons, temperature, humidity, wind speed, and l
     technologies: ["React", "CSS Modules", "Fetch API", "Geolocation API"],
     link: "https://dukoweatherapp.netlify.app/",
     gitLink: "https://github.com/Dukoooo/react-weather-app",
+  },
+  {
+    id: 5,
+    name: "Budget App",
+    img: budgetApp,
+    text: `A comprehensive budget management application built with React and Firebase Firestore.  
+It allows users to track monthly budgets, add and manage income and expenses, and categorize recurring or one-time transactions.  
+Features include dynamic month-based balances, savings tracking, and a responsive, user-friendly interface.`,
+    technologies: ["React", "Firebase Firestore", "CSS Modules", "Context API"],
+    link: "https://duko-budget-app.netlify.app/",
+    gitLink: "https://github.com/Dukoooo/budget-app",
   },
 ];
 
