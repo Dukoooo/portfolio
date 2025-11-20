@@ -10,12 +10,16 @@ function AboutMe() {
           <img src={img} alt="Juraj picture" className={styles.img} />
         </div>
         <p className={styles.paragraph}>
-          Greetings! I'm Juraj Golian, a web developer with experience in HTML,
-          CSS, Sass, jQuery, and JavaScript. I began my journey in 2022 and I’m
-          always working to improve and do my best in everything I build. I’m
-          originally from Slovakia and will soon be moving to Prague, where I'm
-          looking for new opportunities and collaborations. If you'd like to
-          work together, feel free to reach out!
+          Hi! I'm Juraj Golian, a frontend web developer. I focus on modern web
+          development with HTML, CSS, JavaScript, React, and Next.js. I began my
+          journey in 2022 and since then I’ve been continuously improving my
+          skills and the quality of the projects I build. While frontend is my
+          main direction, I also have foundational experience in other areas
+          such as testing (Playwright) and SQL, which help me better understand
+          the full development process. I’m originally from Slovakia and will
+          soon be moving to Prague, where I’m looking for new opportunities and
+          collaborations. If you'd like to work together, feel free to reach
+          out!
         </p>
       </div>
     </section>
