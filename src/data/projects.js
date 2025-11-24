@@ -3,6 +3,7 @@ import todoProject from "../assets/todoApp.png";
 import myPortfolio from "../assets/myPortfolio.png";
 import weatherApp from "../assets/weatherApp.png";
 import budgetApp from "../assets/budgetApp.png";
+import ciglan_2 from "../assets/ciglan_2.png";
 const projects = [
   {
     id: 1,
@@ -55,6 +56,17 @@ Features include dynamic month-based balances, savings tracking, and a responsiv
     technologies: ["React", "Firebase Firestore", "CSS Modules", "Context API"],
     link: "https://duko-budget-app.netlify.app/",
     gitLink: "https://github.com/Dukoooo/budget-app",
+  },
+  {
+    id: 6,
+    name: "ciglan.sk 2025 update",
+    img: ciglan_2,
+    text: `A modern web application built with React, Vite, and styled with Tailwind CSS.
+Features responsive design, React Router navigation, EmailJS contact form, image gallery, image slider, form submission notifications, and a ScrollToTop component.`,
+    technologies: ["React", "Tailwind CSS", "EmailJS", "Framer Motion"],
+
+    link: "https://ciglan.sk/",
+    gitLink: "https://github.com/Dukoooo/ciglan_2025_tailwind",
   },
 ];
 

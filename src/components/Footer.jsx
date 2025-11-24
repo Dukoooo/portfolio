@@ -40,7 +40,7 @@ function Footer() {
             {" "}
             <FaLinkedin />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/juraj_duko/">
             <FaInstagram />
           </a>
         </div>
