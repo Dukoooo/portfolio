@@ -12,7 +12,7 @@ const projects = [
     text: `  Ciglan.sk was my first web project, created in 2023 using HTML, SCSS, and vanilla JavaScript.
 The site features responsive design, a functional back-to-top button, a mobile navigation menu, and a photo gallery. `,
     technologies: ["HTML", "SCSS", "javaScript"],
-    link: "https://ciglan.sk/",
+    link: "https://ciglan-sk.netlify.app/",
     gitLink: "https://github.com/Dukoooo/Ciglan.sk",
   },
   {
